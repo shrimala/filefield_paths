@@ -348,7 +348,7 @@ function filefield_paths_entity_insert(EntityInterface $entity) {
  */
 function filefield_paths_entity_update(EntityInterface $entity) {
   if ($entity instanceof ContentEntityInterface) {
-    $entity->enforceIsNew(TRUE);
+    //$entity->enforceIsNew(TRUE);
     foreach ($entity->getFields() as $field) {
       if ($field instanceof FileFieldItemList) {
         /** @var FieldConfig $definition */
